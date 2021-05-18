@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./styles.css";
 
 import {connect} from "react-redux";
-import { increaseCountAction, decreaseCountAction } from "./store";
+import { increaseCountAction, decreaseCountAction } from "./count/actions.js";
 
 function App2(props) {
   //const [count, setCount] = useState(0);
