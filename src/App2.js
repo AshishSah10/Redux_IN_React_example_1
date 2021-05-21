@@ -1,8 +1,12 @@
 import { useState } from "react";
 import "./styles.css";
 
+import {Provider} from "react-redux";
+import {store} from "./store.js";
+
 import {connect} from "react-redux";
 import { increaseCountAction, decreaseCountAction } from "./count/actions.js";
+import Component1 from "./Component1";
 
 function App2(props) {
   //const [count, setCount] = useState(0);
@@ -17,6 +21,9 @@ function App2(props) {
       {count}
       <br />
       <button onClick={() => decreaseCount(count)}>Down</button>
+      
+        <Component1/>
+     
     </div>
   );
 }
